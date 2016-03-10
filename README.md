@@ -2,12 +2,10 @@
 The way of H5 send message to native
 
 # Scene
-
 * Example
 
 ```objc
 有个需求，点击 H5页面的一个按钮，将 H5页面的信息传递给我们 native
-@end
 ```
 * method
 
@@ -19,13 +17,12 @@ The way of H5 send message to native
 2>如果不将 native 的信息拼入，也可以这样操作，因为是无效 url，肯定是请求失败，H5端可以将需要传给 native 端的信息包入失败信息里面传给我们（不推荐这样做,时间耗费的比第一种多）
 
 以上两种方案均可实现 H5端向 Native 传送信息
-@end
 ```
 
 # Usage
 See the Demo
 
-* Demo Show
+# Demo Show
 
 ![image](https://github.com/indexjincieryi/NDH5ToNative/blob/master/NDH5ToNative/NDH5ToNative.gif)
 
