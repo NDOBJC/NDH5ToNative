@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>我是H5</title>
+    <style>
+    </style>
+</head>
+<body>
+	<h1>我是H5</h1>
+    <script>
+        
+    function setupWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+        window.WVJBCallbacks = [callback];
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+    }
+    
+    setupWebViewJavascriptBridge(function(bridge) {
+                                 
+                                 /// 创建按钮
+                                 var firstButton = document.getElementById('firstDiv').appendChild(document.createElement('button'))
+                                 firstButton.innerHTML = '点我'
+                                 
+                                 /// 点击按钮
+                                 firstButton.onclick = function(e)
+                                 {
+                                     /// 创建按钮
+                                     var secondButton = document.getElementById('secondDiv').appendChild(document.createElement('button'))
+                                     secondButton.innerHTML = 'Hello native, I am H5'
+                                 
+                                     /// 'CallHandlerID' H5与 native 必须一样的 才可将信息从 H5传递给 native
+                                     /// {'key': 'Value from H5'} H5传递给 Native的字典
+                                     bridge.callHandler('CallHandlerID', {'key': 'Value from H5'}, function(response)
+                                                        {
+                                                        /// 创建按钮
+                                                        var thirdButton = document.getElementById('thirdDiv').appendChild(document.createElement('button'))
+                                                        /// response由原生传递给 H5的信息
+                                                        thirdButton.innerHTML = JSON.stringify(response)
+                                                        })
+                                }
+     })
+    </script>
+    <div id='firstDiv'></div>
+    <div id='secondDiv'></div>
+    <div id='thirdDiv'></div>
+</body>
+</html>
