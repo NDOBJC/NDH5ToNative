@@ -3,12 +3,11 @@ The way of H5 send message to native
 
 # Scene
 * Example
-
 ```objc
 有个需求，点击 H5页面的一个按钮，将 H5页面的信息传递给我们 native
 ```
-* method
 
+* method
 ```objc
 目前我做过的项目中使用过两种方案：
 第一种是集成WebViewJavascriptBridge（地址：https://github.com/marcuswestin/WebViewJavascriptBridge）这是方案简单快速，推荐使用
@@ -23,9 +22,7 @@ The way of H5 send message to native
 See the Demo
 
 # Demo Show
-
 ![image](https://github.com/indexjincieryi/NDH5ToNative/blob/master/NDH5ToNative/NDH5ToNative.gif)
 
 # More Info
-
 Have a question? Please [open an issue](https://github.com/indexjincieryi/NDH5ToNative/issues)!
