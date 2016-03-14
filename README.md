@@ -20,7 +20,7 @@ self.jsContext[@"jsBack"] = ^(NSDictionary *param) {
 /// param返回数据
 };
 
-以上两种方案均可实现 H5端向 Native 传送信息
+以上3种方案均可实现 H5端向 Native 传送信息
 ```
 
 # Usage
