@@ -57,10 +57,30 @@
                                             <segue destination="VP0-2s-pPu" kind="show" id="dvO-rh-N3r"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9WT-XN-7sZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="9Ts-KO-ac6" style="IBUITableViewCellStyleDefault" id="9WT-XN-7sZ">
                                         <rect key="frame" x="0.0" y="152" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9WT-XN-7sZ" id="M3E-m5-niQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="JSCoreBridge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Ts-KO-ac6">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pPQ-JC-ReX" kind="show" id="bJ8-p9-X4E"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3m9-W6-4Jk">
+                                        <rect key="frame" x="0.0" y="196" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3m9-W6-4Jk" id="WaO-d2-pNh">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -113,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8p6-22-6dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="108"/>
+            <point key="canvasLocation" x="1167" y="-379"/>
         </scene>
         <!--CustomBridge-->
         <scene sceneID="rOY-Th-9Uf">
@@ -132,7 +152,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Dm-xf-cbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="809"/>
+            <point key="canvasLocation" x="1167" y="307"/>
+        </scene>
+        <!--JSCoreBridge-->
+        <scene sceneID="HJn-Xw-uTa">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pPQ-JC-ReX" customClass="NDJSCoreBridgeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y7V-iZ-x2K"/>
+                        <viewControllerLayoutGuide type="bottom" id="weF-dG-gqR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VIF-gV-FWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="JSCoreBridge" id="8VZ-Mg-tSJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yth-t5-8Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="1070"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GYV-F7-ZAw">

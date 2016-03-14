@@ -42,4 +42,5 @@
         responseCallback(@"Hello H5, I am native , nice to meet you!");
     }];
 }
+
 @end

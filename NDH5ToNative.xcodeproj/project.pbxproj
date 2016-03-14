@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3A806C1C964D86005A5DED /* NDJSCoreBridgeIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A806B1C964D86005A5DED /* NDJSCoreBridgeIndex.html */; };
+		7D3A806F1C964DB2005A5DED /* NDJSCoreBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A806E1C964DB2005A5DED /* NDJSCoreBridgeViewController.m */; };
 		7D8952801C8ECD73003F2ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D89527F1C8ECD73003F2ECD /* main.m */; };
 		7D8952831C8ECD73003F2ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8952821C8ECD73003F2ECD /* AppDelegate.m */; };
 		7D8952891C8ECD73003F2ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D8952871C8ECD73003F2ECD /* Main.storyboard */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D3A806B1C964D86005A5DED /* NDJSCoreBridgeIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NDJSCoreBridgeIndex.html; sourceTree = "<group>"; };
+		7D3A806D1C964DB2005A5DED /* NDJSCoreBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDJSCoreBridgeViewController.h; sourceTree = "<group>"; };
+		7D3A806E1C964DB2005A5DED /* NDJSCoreBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDJSCoreBridgeViewController.m; sourceTree = "<group>"; };
 		7D89527B1C8ECD73003F2ECD /* NDH5ToNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDH5ToNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D89527F1C8ECD73003F2ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7D8952811C8ECD73003F2ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +102,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D3A806A1C964D86005A5DED /* NDJSCoreBridgeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D3A806B1C964D86005A5DED /* NDJSCoreBridgeIndex.html */,
+				7D3A806D1C964DB2005A5DED /* NDJSCoreBridgeViewController.h */,
+				7D3A806E1C964DB2005A5DED /* NDJSCoreBridgeViewController.m */,
+			);
+			path = NDJSCoreBridgeViewController;
+			sourceTree = "<group>";
+		};
 		7D8952721C8ECD73003F2ECD = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,7 @@
 			children = (
 				7DF4BE651C912475000997DC /* NDWebViewJavascriptBridgeViewController */,
 				7DF4BE611C912475000997DC /* NDCustomBridgeViewController */,
+				7D3A806A1C964D86005A5DED /* NDJSCoreBridgeViewController */,
 				7D8952811C8ECD73003F2ECD /* AppDelegate.h */,
 				7D8952821C8ECD73003F2ECD /* AppDelegate.m */,
 				7D8952871C8ECD73003F2ECD /* Main.storyboard */,
@@ -300,6 +316,7 @@
 			files = (
 				7D89528E1C8ECD73003F2ECD /* LaunchScreen.storyboard in Resources */,
 				7DF4BE741C912475000997DC /* NDWebViewJavascriptBridgeIndex.html in Resources */,
+				7D3A806C1C964D86005A5DED /* NDJSCoreBridgeIndex.html in Resources */,
 				7DF4BE721C912475000997DC /* NDCustomBridgeIndex.html in Resources */,
 				7D89528B1C8ECD73003F2ECD /* Assets.xcassets in Resources */,
 				7D8952891C8ECD73003F2ECD /* Main.storyboard in Resources */,
@@ -328,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8952831C8ECD73003F2ECD /* AppDelegate.m in Sources */,
+				7D3A806F1C964DB2005A5DED /* NDJSCoreBridgeViewController.m in Sources */,
 				7D8952801C8ECD73003F2ECD /* main.m in Sources */,
 				7DF4BE771C912475000997DC /* WebViewJavascriptBridge_JS.m in Sources */,
 				7DF4BE751C912475000997DC /* NDWebViewJavascriptBridgeViewController.m in Sources */,
