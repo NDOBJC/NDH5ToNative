@@ -63,7 +63,10 @@
             }
             
             dispatch_async(dispatch_get_main_queue(), ^{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" message:param[@"message"] delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+#pragma clang diagnostic pop
                 [alert show];
             });
         };
