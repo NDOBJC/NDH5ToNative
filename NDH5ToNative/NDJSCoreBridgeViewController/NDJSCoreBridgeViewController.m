@@ -18,8 +18,10 @@
 
 @implementation NDJSCoreBridgeViewController
 
+#pragma mark - life cycle
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self configWebView];
 }

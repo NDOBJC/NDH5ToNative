@@ -14,7 +14,10 @@
 
 @implementation NDCustomBridgeViewController
 
-- (void)viewDidLoad {
+#pragma mark - life cycle
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self configWebView];
 }
