@@ -19,12 +19,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self configWebView];
+    
+    [self nd_configWebView];
 }
 
 #pragma mark - private
 
-- (void)configWebView
+- (void)nd_configWebView
 {
     UIWebView *web = [[UIWebView alloc]initWithFrame:self.view.bounds];
     web.frame = CGRectMake(0,64, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) - 64) ;
@@ -43,12 +44,14 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    if ([request.URL.absoluteString containsString:@"jsBack"]) {
+    if ([request.URL.absoluteString containsString:@"jsBack"])
+    {
         ///获取到请求的 url中传回的信息 包含 jsBack 则返回上一级
         [self.navigationController popViewControllerAnimated:YES];
         ///不发起请求
          return NO;
     }
+    
     return YES;
 }
 

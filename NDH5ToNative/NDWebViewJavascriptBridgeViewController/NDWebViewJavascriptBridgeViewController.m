@@ -13,7 +13,7 @@
 @interface NDWebViewJavascriptBridgeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property WebViewJavascriptBridge* bridge;
+@property (nonatomic, strong) WebViewJavascriptBridge* bridge;
 
 @end
 
@@ -24,12 +24,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self configWebView];
+    
+    [self nd_configWebView];
 }
 
 #pragma mark - private
 
-- (void)configWebView
+- (void)nd_configWebView
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"NDWebViewJavascriptBridgeIndex" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];

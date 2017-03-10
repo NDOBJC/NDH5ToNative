@@ -23,12 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self configWebView];
+    
+    [self nd_configWebView];
 }
 
 #pragma mark - private
 
-- (void)configWebView
+- (void)nd_configWebView
 {
     UIWebView *web = [[UIWebView alloc]initWithFrame:self.view.bounds];
     web.frame = CGRectMake(0,64, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) - 64) ;
